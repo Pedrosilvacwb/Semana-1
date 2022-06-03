@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <meta name="description" content="Testando as opções de formulário">
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Formulário de Cadastro</legend>
+                <table>
+                    <tr>
+                        <td><label for="nome-completo">Nome Completo</label></td>
+                        <td><input type="text" name="nome-completo" id="nome-completo" placeholder="Nome Completo..." required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="telefone">Telefone</label></td>
+                        <td><input type="tel" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="nascimento">Data de Nascimento</label></td>
+                        <td><input type="date" name="nascimento" id="nascimento" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="cidade">Cidade</label></td>
+                        <td><select name="cidade" id="cidade" required>
+                                <option value=""></option>
+                                <option value="curitiba">Curitiba</option>
+                                <option value="rio">Rio de Janeiro</option>
+                                <option value="sao-paulo">São Paulo</option>
+                                <option value="porto-alegre">Porto Alegre</option>
+                                <option value="florianopolis">Florianopolis</option></td>
+                            </select>
+                    </tr>
+
+                    <tr>
+                        <td><label for="redes-sociais">Qual rede social você mais utiliza?</label></td>
+                        <td><input type="radio" id="redes-sociais" name="redes-sociais" required>Facebook</td>
+                        <td><input type="radio" id="redes-sociais" name="redes-sociais">Instagram</td>
+                        <td><input type="radio" id="redes-sociais" name="redes-sociais">Twitter</td>
+                        <td><input type="radio" id="redes-sociais" name="redes-sociais">Linkedin</td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="senha">Defina uma senha</label></td>
+                        <td><input type="password" name="senha" id="senha" required placeholder="Digite sua senha aqui..."></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="confirma-senha">Confirme sua senha</label></td>
+                        <td><input type="password" name="confirma-senha" id="confirma-senha" required placeholder="Confirme sua senha..."></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="sobre-mim">Conte um pouco sobre você</label></td>
+                        <td><textarea name="sobre-mim" id="sobre-mim" placeholder="Conte um pouco sobre você..." required></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="newsletter">Gostaria de receber novidades em seu e-mail?</label></td>
+                        <td><select name="newsletter" id="newsletter" required>
+                                <option value=""></option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><button type="submit">Cadastrar</button></td>
+                    </tr>
+                </table>
+                             
+                
+            </fieldset>
+
+            
+        </form>
+    </main>
+</body>
+</html>
